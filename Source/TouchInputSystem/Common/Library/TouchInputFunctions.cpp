@@ -8,4 +8,5 @@
 void UTouchInputFunctions::BroadcastTouchInputs(const FTouchInputInfo& TouchInputs)
 {
 	UTouchSystemDelegates::Get().MasterInputReceived.Broadcast(TouchInputs);
+	UTouchSystemDelegates::Get().MasterInputReceivedGlobal.Broadcast(TouchInputs);
 }

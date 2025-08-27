@@ -41,6 +41,8 @@ void UBaseTouchButton::NativeOnInitialized()
 {
 	Super::NativeOnInitialized();
 	ListenForAbility();
+
+	UTouchSystemDelegates::Get().MasterInputReceived.AddUObject(this, &UBaseTouchButton::HandleMasterTouchMessage);
 }
 
 void UBaseTouchButton::NativeDestruct()

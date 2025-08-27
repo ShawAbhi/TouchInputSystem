@@ -18,31 +18,33 @@ protected:
 	
 public:
 
-	DECLARE_DELEGATE(FDelegateZeroParams);
-	DECLARE_DELEGATE_OneParam(FDelegateOneParamBool, bool);
-	DECLARE_DELEGATE_OneParam(FDelegateOneParamFString, FString);
-	DECLARE_DELEGATE_OneParam(FDelegateOneParamUint8, uint8);
+	DECLARE_DELEGATE(FOnNoParams);
+	DECLARE_DELEGATE_OneParam(FOnBool, bool);
+	DECLARE_DELEGATE_OneParam(FOnString, FString);
+	DECLARE_DELEGATE_OneParam(FOnByte, uint8);
 
-	DECLARE_MULTICAST_DELEGATE(FMulticastDelegateZeroParams);
-	DECLARE_MULTICAST_DELEGATE_OneParam(FMulticastDelegateOneParamBool, bool);
-	DECLARE_MULTICAST_DELEGATE_OneParam(FMulticastDelegateOneParamFloat, float);
-	DECLARE_MULTICAST_DELEGATE_OneParam(FMulticastDelegateOneParamUint8, uint8);
-	DECLARE_MULTICAST_DELEGATE_OneParam(FMulticastDelegateOneParamFString, FString);
-	DECLARE_MULTICAST_DELEGATE_OneParam(FMulticastDelegateOneParamFTransform, FTransform);
-	DECLARE_MULTICAST_DELEGATE_OneParam(FMulticastDelegateOneParamAActor, AActor*);
+	DECLARE_MULTICAST_DELEGATE(FOnNoParamsMulti);
+	DECLARE_MULTICAST_DELEGATE_OneParam(FOnBoolMulti, bool);
+	DECLARE_MULTICAST_DELEGATE_OneParam(FOnFloatMulti, float);
+	DECLARE_MULTICAST_DELEGATE_OneParam(FOnByteMulti, uint8);
+	DECLARE_MULTICAST_DELEGATE_OneParam(FOnStringMulti, FString);
+	DECLARE_MULTICAST_DELEGATE_OneParam(FOnTransformMulti, FTransform);
+	DECLARE_MULTICAST_DELEGATE_OneParam(FOnActorMulti, AActor*);
 	
-	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FDynamicMulticastDelegateZeroParams);
-	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FDynamicMulticastDelegateOneParamBool, bool, bValue);
-	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FDynamicMulticastDelegateOneParamFloat, float, Value);
-	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FDynamicMulticastDelegateOneParamUint8, uint8, Value);
-	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FDynamicMulticastDelegateOneParamInputStruct, FTouchInputInfo, TouchInput);
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnNoParamsDynMulti);
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnBoolDynMulti, bool, bValue);
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnFloatDynMulti, float, Value);
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnByteDynMulti, uint8, Value);
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnTouchInputDynMulti, FTouchInputInfo, TouchInput);
+
 	
-	DECLARE_MULTICAST_DELEGATE_OneParam(FMulticastDelegateOneParamInputStruct, FTouchInputInfo);
-	DECLARE_MULTICAST_DELEGATE_OneParam(FMulticastDelegateOneParamFVector2D, FVector2D);
-	DECLARE_MULTICAST_DELEGATE_TwoParams(FMulticastDelegateTwoParamUint8InputStruct, uint8, FTouchInputInfo);
+	DECLARE_MULTICAST_DELEGATE_OneParam(FOnTouchInputMulti, FTouchInputInfo);
+	DECLARE_MULTICAST_DELEGATE_OneParam(FOnVector2DInputMulti, FVector2D);
+	DECLARE_MULTICAST_DELEGATE_TwoParams(FOnByteAndTouchInputMulti, uint8, FTouchInputInfo);
 	
 	static UTouchSystemDelegates& Get();
 	
-	FMulticastDelegateOneParamInputStruct MasterInputReceived;
-	FMulticastDelegateOneParamFVector2D TouchControlRotation;
+	FOnTouchInputMulti MasterInputReceived;
+	FOnTouchInputDynMulti MasterInputReceivedGlobal;
+	FOnVector2DInputMulti TouchControlRotation;
 };

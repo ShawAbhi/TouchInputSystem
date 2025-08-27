@@ -63,7 +63,7 @@ protected:
 	FInGameButtonData ButtonData;
 
 	UPROPERTY(BlueprintAssignable, Category="Collision")
-	UTouchSystemDelegates::FDynamicMulticastDelegateOneParamInputStruct OnInputReceivedDelegate;
+	UTouchSystemDelegates::FOnTouchInputDynMulti OnInputReceivedDelegate;
 
 	virtual void NativeTick(const FGeometry& MyGeometry, float InDeltaTime) override;
 	virtual void NativeOnInitialized() override;
@@ -76,6 +76,8 @@ protected:
 	void ListenToTouchIndexMessages(const int& PointerIndex);
 	UFUNCTION()
 	void HandleTouchIndexMessages(const FTouchInputInfo TouchInfo);
+	UFUNCTION(BlueprintImplementableEvent)
+	void HandleMasterTouchMessage(const FTouchInputInfo TouchInfo);
 
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "BaseInGameButton")
 	void SetIsActive(bool bNewIsActive);
