@@ -1,0 +1,23 @@
+# Ignore all files by default, but scan all directories.
+*
+
+# Do not ignore git files in the root of the repo.
+!/.git*
+
+# Do not ignore current project's `.uproject`.
+!/*.uproject
+!/*.uplugin
+
+# Do not ignore source, config and plugins dirs.
+!/Source/
+!/Source/**
+!/Config/
+!/Config/**
+!/KeyTool/
+!/KeyTool/**
+!/Plugins/
+!/Plugins/**
+!/Content/
+!/Content/**
+!/Resources/
+!/Resources/**
