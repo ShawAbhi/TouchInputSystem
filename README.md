@@ -22,9 +22,6 @@ It is built with **AAA standards**, similar to what you experience in **PUBG Mob
 2. Add Below snippet in Player Character or Player Controller
    
 <details>
-<summary>📦 Installation Command</summary>
-
-```bash
-git clone https://github.com/ShawAbhi/TouchInputSystem.git
-```
+<iframe src="https://blueprintue.com/render/bew7nfhf/" scrolling="no" allowfullscreen></iframe>
 </details>
+
