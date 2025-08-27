@@ -238,25 +238,4 @@ If this plugin helps you, please ⭐ **star this repository**.
 
 2. Add Below snippet in Player Character or Player Controller
    
-<details>
-<summary>📦 Installation Command 
-<button onclick="copyToClipboard('git clone https://github.com/ShawAbhi/TouchInputSystem.git')" 
-        style="margin-left: 10px; padding: 2px 8px; font-size: 12px; background: #0366d6; color: white; border: none; border-radius: 3px; cursor: pointer;">
-📋 Copy
-</button>
-</summary>
-
-<pre><code>git clone https://github.com/ShawAbhi/TouchInputSystem.git</code></pre>
-
-</details>
-
-<script>
-function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(() => {
-        event.target.textContent = '✅ Copied!';
-        setTimeout(() => {
-            event.target.textContent = '📋 Copy';
-        }, 2000);
-    });
-}
-</script>
+[![Blueprint Screenshot](Resources/TouchManagerSetup.png)](https://blueprintue.com/render/bew7nfhf/)
