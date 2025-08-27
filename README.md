@@ -38,7 +38,6 @@ It integrates **directly** with Unreal's **Enhanced Input System** (Input Action
 
 <details>
 <summary>Blueprint Snippet Here (Copy and Paste in Editor) </summary>
-lugins/TouchInputSystem/
    
    ```
 Begin Object Class=/Script/BlueprintGraph.K2Node_InputTouch Name="K2Node_InputTouch_0" ExportPath="/Script/BlueprintGraph.K2Node_InputTouch'/Game/Blueprints/Pawn/BP_BasePawn.BP_BasePawn:EventGraph.K2Node_InputTouch_0'"
