@@ -33,8 +33,8 @@ It integrates **directly** with Unreal's **Enhanced Input System** (Input Action
 2. Launch your project and enable **TouchInputSystem** under **Edit → Plugins**.
 3. Ensure **Enhanced Input** is enabled in your project (UE5 default).
 4. Add Below snippet in Player Character or Player Controller
-[![Blueprint Screenshot](Resources/TouchManagerSetup.png)](https://blueprintue.com/render/bew7nfhf/)
 
+[![Blueprint Screenshot](Resources/TouchManagerSetup.png)](https://blueprintue.com/render/bew7nfhf/)
 
 <details>
 <summary>Blueprint Snippet Here (Copy and Paste in Editor) </summary>
