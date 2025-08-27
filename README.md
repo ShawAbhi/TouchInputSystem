@@ -18,3 +18,6 @@ It is built with **AAA standards**, similar to what you experience in **PUBG Mob
 1. Clone the repo:
    ```bash
    git clone https://github.com/ShawAbhi/TouchInputSystem.git
+
+2. Add Below snippet in Player Character or Player Controller
+<iframe src="https://blueprintue.com/render/bew7nfhf/" scrolling="no" allowfullscreen></iframe>
