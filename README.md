@@ -20,12 +20,10 @@ It is built with **AAA standards**, similar to what you experience in **PUBG Mob
    git clone https://github.com/ShawAbhi/TouchInputSystem.git
 
 2. Add Below snippet in Player Character or Player Controller
-<div style="width: 100%; height: 400px;">
-  <iframe src="https://blueprintue.com/render/bew7nfhf/" 
-          width="100%" 
-          height="100%" 
-          frameborder="0" 
-          scrolling="no" 
-          allowfullscreen>
-  </iframe>
-</div>
+   
+<details>
+<summary>View Blueprint</summary>
+
+[Open Blueprint in New Tab](https://blueprintue.com/render/bew7nfhf/)
+
+</details>
