@@ -26,5 +26,5 @@ It is built with **AAA standards**, similar to what you experience in **PUBG Mob
 
 ```bash
 git clone https://github.com/ShawAbhi/TouchInputSystem.git
-</details>
 ```
+</details>
